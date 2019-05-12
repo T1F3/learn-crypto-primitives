@@ -42,5 +42,3 @@ def genPubKey():
 		e = random.randint(2, pq1-1)
 	pubKey = (n,e)
 	return(p,q,pubKey)
-
-print(genPubKey())
