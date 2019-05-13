@@ -11,7 +11,7 @@ def findPrimes(lower,upper):
 				primArr.append(num)
 	return(primArr)
 
-primes = findPrimes(100,1000)
+primes = findPrimes(10,100)
 
 # def Euclid(a,b):
 # 	count = 0
@@ -43,8 +43,6 @@ def genPubKey():
 	pubKey = (n,e)
 	return(p,q,pubKey)
 
-params = genPubKey()
-
 
 def genPriKey(p,q,e,r):
 	n = p*q
@@ -53,4 +51,10 @@ def genPriKey(p,q,e,r):
 	d = params[0]
 	return(n,d)
 
-genPriKey(params[0],params[1],params[2][1],1000)
+params = genPubKey()
+
+
+PriKey = genPriKey(params[0],params[1],params[2][1],10000)
+PubKey = (params[2])
+
+print(PubKey,'---',PriKey)
