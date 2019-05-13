@@ -57,4 +57,4 @@ params = genPubKey()
 PriKey = genPriKey(params[0],params[1],params[2][1],10000)
 PubKey = (params[2])
 
-print(PubKey,'---',PriKey)
+print(PubKey,'--',PriKey)
