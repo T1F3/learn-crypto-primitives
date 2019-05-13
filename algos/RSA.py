@@ -43,4 +43,14 @@ def genPubKey():
 	pubKey = (n,e)
 	return(p,q,pubKey)
 
-print(genPubKey())
+params = genPubKey()
+
+
+def genPriKey(p,q,e,r):
+	n = p*q
+	pq1 = (p-1)*(q-1)
+	params = filter(lambda d:((d*e)%pq1)==1,range(1,r))
+	d = params[0]
+	return(n,d)
+
+genPriKey(params[0],params[1],params[2][1],1000)
