@@ -58,3 +58,11 @@ PriKey = genPriKey(params[0],params[1],params[2][1],10000)
 PubKey = (params[2])
 
 print(PubKey,'--',PriKey)
+
+def encrypt(text,e,n):
+	code = (text**e)%n
+	return code
+
+def decrypt(code,d,n):
+	text = (code**d)%n
+	return text
