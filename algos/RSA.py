@@ -53,6 +53,13 @@ def genPriKey(p,q,e,r):
         return( {'n':n, 'd':d} )
 
 
+def crackRSA(n,e):
+	for i in primes:
+		for j in primes:
+			if (i*j==n):
+				return genPriKey(i,j,e,10000)
+
+
 params = genPubKey()
 
 
