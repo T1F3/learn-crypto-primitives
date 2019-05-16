@@ -78,8 +78,9 @@ text = 5
 print(text)
 
 def encrypt(text,e,n):
-	code = (text**e)%n
-	return code
+	text_Arr = map(ord, text)
+	code_Arr = [(txt**e)%n for txt in text_Arr]
+	return code_Arr
 
 
 
