@@ -84,10 +84,7 @@ def encrypt(text,e,n):
 
 
 
-print(code)
 
-def decrypt(code,d,n):
-	text = (code**d)%n
+def decrypt(code_Arr,d,n):
+	text = ''.join( map(chr, [ (code**d)%n for code in code_Arr  ] ))
 	return text
-
-print(decrypt(code,d,n))
