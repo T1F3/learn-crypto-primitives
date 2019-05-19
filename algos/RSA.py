@@ -26,7 +26,7 @@ primes = findPrimes(10,100)
 #               remArr[count%2] = rem
 #               count+=1
 #       return(max(remArr))
-#
+
 
 def Euclid(a, b):
     if a == 0 :
