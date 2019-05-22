@@ -14,7 +14,7 @@ def findPrimes(lower,upper):
 primes = findPrimes(10,100)
 
 # def Euclid(a,b):
-#       count = 0
+#,       count = 0
 #       carry = max(a,b)
 #       div = min(a,b)
 #       rem = carry%div
