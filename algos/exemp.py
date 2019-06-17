@@ -1,2 +1,2 @@
-djdj#ddexmp ptyhon file start
+jdj#ddexmp ptyhon file start
 #sm
